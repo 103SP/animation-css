@@ -89,4 +89,16 @@ header {
   justify-content: center;
 }
 
+.icon_maps {
+  background-color: #87CEFA;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon_maps p {
+  padding-left: 15px;
+  margin: 0;
+}
+
 /*# sourceMappingURL=style.css.map */
