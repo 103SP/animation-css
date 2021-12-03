@@ -1,89 +1,90 @@
-    @import "variables.scss";
-    @import "mixins.scss";
-    *,
-    *::after,
-    *::before {
-        margin: 0px;
-        padding: 0px;
-        box-sizing: unset;
-        box-sizing: inherit;
-    }
-    
-    html {
-        height: 100%;
-    }
-    
-    body {
-        box-sizing: border-box;
-        color: $cd-txt;
-        height: 100%;
-        font-family: 'Montserrat', sans-serif;
-    }
-    
-    .body_1 {
-        background: $cd-on;
-    }
-    
-    .body_2 {
-        background: $cd-btn;
-    }
-    
-    .body_3 {
-        background: $cl-txt;
-    }
-    
-    .container {
-        height: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .btn {
-        a {
-            padding: 1.85rem 3rem;
-            border-radius: 10rem;
-            border: 2px solid $cl-btn;
-            cursor: pointer;
-            text-decoration: none;
-            background: $cd-btn;
-            color: $cd-txt;
-            font-size: 3rem;
-        }
-    }
-    
-    .btn_2 {
+@import "variables.scss";
+@import "mixins.scss";
+*,
+*::after,
+*::before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: unset;
+    box-sizing: inherit;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    box-sizing: border-box;
+    color: $cd-txt;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.body_1 {
+    background: $cd-on;
+}
+
+.body_2 {
+    background: $cd-btn;
+}
+
+.body_3 {
+    background: $cl-txt;
+}
+
+.container {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    a {
         padding: 1.85rem 3rem;
         border-radius: 10rem;
         border: 2px solid $cl-btn;
         cursor: pointer;
-        transition-property: transform;
-        transition-duration: 400ms;
-        &:hover {
-            transform: scale(1.15);
-            color: #000;
-            background-color: $btn-height;
-        }
+        text-decoration: none;
+        background: $cd-btn;
+        color: $cd-txt;
+        font-size: 3rem;
     }
-    
-    .mix {
-        height: $height;
-        width: $width;
-        padding: $padding;
-        background-color: $persp;
-        @include border-radius(20px);
-        p {
-            color: $cd-on;
-        }
+}
+
+.btn_2 {
+    padding: 1.85rem 3rem;
+    border-radius: 10rem;
+    border: 2px solid $cl-btn;
+    cursor: pointer;
+    transition-property: transform;
+    transition-duration: 400ms;
+    &:hover {
+        transform: scale(1.15);
+        color: #000;
+        background-color: $btn-height;
     }
-    
-    .container_2 {
-        height: 0%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+}
+
+.mix {
+    height: $height;
+    width: $width;
+    padding: $padding;
+    background-color: $persp;
+    @include border-radius(20px);
+    p {
+        color: $cd-on;
     }
-    
-    header {
-        display: flex;
-    }
+}
+
+.container_2 {
+    height: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
